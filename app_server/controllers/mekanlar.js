@@ -5,7 +5,7 @@ const anaSayfa = function(req, res, next) {
       'sayfaBaslik' : {
         'siteAd' : 'Mekan 32',
         'aciklama' : 'Isparta civarındaki mekanları keşfedin!',
-        'footertxt' : ' Ömer Ada 2020'
+        'footer' : ' Ömer Ada 2020 - Tüm Hakları Saklıdır.'
       },
       'mekanlar' : [
         {
