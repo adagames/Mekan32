@@ -1,11 +1,11 @@
 
 const anaSayfa = function(req, res, next) {
   res.render('mekanlar-liste',
-    { title : 'Anasayfa',
+    { title : 'Anasayfa', 
+    'footer': 'Ömer Ada 2020 - Tüm Hakları Saklıdır.',
       'sayfaBaslik' : {
         'siteAd' : 'Mekan 32',
-        'aciklama' : 'Isparta civarındaki mekanları keşfedin!',
-        'footer' : ' Ömer Ada 2020 - Tüm Hakları Saklıdır.'
+        'aciklama' : 'Isparta civarındaki mekanları keşfedin!', 
       },
       'mekanlar' : [
         {
@@ -51,6 +51,7 @@ const anaSayfa = function(req, res, next) {
 const mekanBilgisi = function(req, res, next) {
   res.render('mekan-detay', 
     { title : 'Mekan Bilgisi',
+    'footer': 'Ömer Ada 2020 - Tüm Hakları Saklıdır.',
       'sayfaBaslik' : 'Starbucks',
       'mekanBilgisi' : {
         'ad' : 'Starbucks',
@@ -105,7 +106,9 @@ const mekanBilgisi = function(req, res, next) {
 }
 
 const yorumEkle = function(req, res, next) {
-  res.render('yorum-ekle', { title: 'Yorum Ekle' });
+  res.render('yorum-ekle', { title: 'Yorum Ekle',
+    'footer': 'Ömer Ada 2020 - Tüm Hakları Saklıdır.'
+});
 }
  
 module.exports = {
