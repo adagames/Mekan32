@@ -1,8 +1,9 @@
+var footer = 'Ömer Ada 2021'
 const hakkinda = function(req, res, next) {
   res.render('hakkinda', 
     { 
       title: 'Hakkında',
-      'footer' : 'Ömer Ada 2020'
+      footer : footer
     }
   );
 }
