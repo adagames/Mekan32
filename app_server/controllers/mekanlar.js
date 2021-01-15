@@ -109,7 +109,7 @@ var mekanBilgisiGetir = function(req, res, callback) {
 
   request(istekSecenekleri, function(hata, cevap, mekanDetaylari) {
     var gelenMekan = mekanDetaylari;
-    if (!hata) {
+    if(cevap.statusCode==200)  {
       // enlem ve boylam bir dizi şeklinde geliyor, bunu ayır
       gelenMekan.koordinatlar = {
         enlem: mekanDetaylari.koordinatlar[0],
