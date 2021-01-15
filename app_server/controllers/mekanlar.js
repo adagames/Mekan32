@@ -2,7 +2,7 @@ var request = require('postman-request');
 var footer = 'Ömer Ada 2021'
 
 var apiSecenekleri = {
-  sunucu : 'https://omerada1811012011.herokuapp.com/',
+  sunucu : 'https://omerada1811012011.herokuapp.com',
   apiYolu : '/api/mekanlar/'
 };
 
